@@ -12,7 +12,7 @@
     background-size: cover;
     height: 100vh;
     background: no-repeat center center fixed; 
-    background-image: url("assets/pictures/background-picture.jpg");
+    background-image: url("../../assets/pictures/background-picture.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -61,4 +61,15 @@
 
 .table thead tr th, .table tbody tr td {
     border: none;
+}
+
+.secondbg{
+    opacity: 100%;
+    width:20%;
+    height:auto;
+    border-radius:100px;
+}
+
+.thirdbg{
+    opacity:100%;
 }
