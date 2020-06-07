@@ -7,15 +7,18 @@
     margin: auto;
 } */
 
+
 .background{
     background-size: cover;
     height: 100vh;
-    background: linear-gradient(-135deg, #c850c8, #4158d0) no-repeat center center fixed; 
+    background: no-repeat center center fixed; 
+    background-image: url("../../assets/pictures/background-picture.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
 
 
 .field{  
@@ -47,6 +50,8 @@
     color: rgb(110,118,126);
     width: 100%;
     text-align: left;
+    border-color : rgb(0, 0, 0);
+
 }
 
 .textarea{  
@@ -56,4 +61,15 @@
 
 .table thead tr th, .table tbody tr td {
     border: none;
+}
+
+.secondbg{
+    opacity: 100%;
+    width:20%;
+    height:auto;
+    border-radius:100px;
+}
+
+.thirdbg{
+    opacity:100%;
 }

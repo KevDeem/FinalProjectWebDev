@@ -1,0 +1,72 @@
+
+
+.background{
+    background-size: cover;
+    height: 100vh;
+    background: no-repeat center center fixed; 
+    background-image: url("../../assets/pictures/background-picture.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+.field{  
+    width: 700px;
+    border-radius: 100px;
+    background-color: rgb(219, 219, 219);
+}
+
+
+.easy{
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+.table-sortable tbody tr {
+    border: 0;
+}
+
+
+.button{
+    background-color: rgb(85, 113, 245)
+}
+
+.dropdownfield{
+    background-color: rgb(219, 219, 219);
+    border-radius: 100px;
+    border:none;
+    color: rgb(110,118,126);
+    width: 100%;
+    text-align: left;
+    border-color : rgb(0, 0, 0);
+
+}
+
+.textarea{  
+    border-radius: 20px;
+    background-color: rgb(219, 219, 219);
+}
+
+.table thead tr th, .table tbody tr td {
+    border: none;
+}
+
+.secondbg{
+    opacity: 100%;
+    width:50%;
+    height:auto;
+    border-radius:100px;
+}
+
+.thirdbg{
+    opacity:100%;
+}
+
+.spacing {
+    margin:100px;
+}

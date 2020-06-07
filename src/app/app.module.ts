@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginpageComponent } from './loginpage/loginpage.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { RegistrationpageComponent } from './registrationpage/registrationpage.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -12,11 +11,11 @@ import { ProductcardsComponent } from './productcards/productcards.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { CartpageComponent } from './cartpage/cartpage.component';
 import { LoginComponent } from './login/login.component';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginpageComponent,
     MainpageComponent,
     RegistrationpageComponent,
     NavbarComponent,
@@ -25,6 +24,7 @@ import { LoginComponent } from './login/login.component';
     InventoryComponent,
     CartpageComponent,
     LoginComponent,
+    AdminNavbarComponent,
   ],
   imports: [
     BrowserModule,
