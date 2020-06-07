@@ -1,16 +1,34 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
+import { RegistrationpageComponent } from './registrationpage/registrationpage.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { ProductcardsComponent } from './productcards/productcards.component';
+import { InventoryComponent } from './inventory/inventory.component';
+import { CartpageComponent } from './cartpage/cartpage.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginpageComponent,
+    MainpageComponent,
+    RegistrationpageComponent,
+    NavbarComponent,
+    SidebarComponent,
+    ProductcardsComponent,
+    InventoryComponent,
+    CartpageComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
