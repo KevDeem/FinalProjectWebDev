@@ -6,6 +6,7 @@ import { InventoryComponent } from './inventory/inventory.component';
 import { CartpageComponent } from './cartpage/cartpage.component';
 import { RegistrationpageComponent } from './registrationpage/registrationpage.component';
 import { LoginComponent } from './login/login.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
 {path : "inventory", component : InventoryComponent},
 {path : "cartpage", component : CartpageComponent},
 {path : "registerpage", component : RegistrationpageComponent},
+{path : "checkout", component : CheckoutComponent},
 {path : "**", redirectTo : "/mainpage", pathMatch : "full"}
 ];
 

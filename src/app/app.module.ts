@@ -12,6 +12,7 @@ import { InventoryComponent } from './inventory/inventory.component';
 import { CartpageComponent } from './cartpage/cartpage.component';
 import { LoginComponent } from './login/login.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
     CartpageComponent,
     LoginComponent,
     AdminNavbarComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
