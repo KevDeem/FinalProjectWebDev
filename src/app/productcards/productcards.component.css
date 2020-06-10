@@ -1,9 +1,13 @@
 .cards{
     margin: 20px;
-    border-radius:20px;
-    
+    border-radius:20px;    
 }
 
 .origin{
     margin-top:100px;
+}
+
+.image{
+    height:100%;
+    width:100%;
 }
