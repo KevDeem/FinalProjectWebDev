@@ -13,6 +13,9 @@ import { CartpageComponent } from './cartpage/cartpage.component';
 import { LoginComponent } from './login/login.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { AdditemComponent } from './additem/additem.component';
+import { ItemtableComponent } from './itemtable/itemtable.component';
+import { EdititemComponent } from './edititem/edititem.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
     LoginComponent,
     AdminNavbarComponent,
     CheckoutComponent,
+    AdditemComponent,
+    ItemtableComponent,
+    EdititemComponent,
   ],
   imports: [
     BrowserModule,

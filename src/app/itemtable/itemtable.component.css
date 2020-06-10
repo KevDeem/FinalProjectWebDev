@@ -1,17 +1,5 @@
 
 
-.background{
-    background-size: cover;
-    height: 100vh;
-    background-image: url("../../assets/pictures/background-picture.jpg");
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    
-}
-
-
 
 .field{  
     width: 700px;
@@ -58,7 +46,6 @@
 
 .secondbg{
     opacity: 100%;
-    width:60%;
     height:auto;
     border-radius:100px;
 }
@@ -69,4 +56,26 @@
 
 .spacing {
     margin:100px;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 600px;
+    overflow: auto;
+    }
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
 }

@@ -14,87 +14,9 @@
     <app-admin-navbar></app-admin-navbar>
     <!-- ADDING ITEMS -->
     <div class="col align-self-center ">
-            <div class="d-flex h-100 justify-content-center align-items-center spacing">
-                    <div class="bg-white p-5 easy secondbg">  
-                      <div class="row">
-                          <form>
-                              <div class="form-group">
-                                  <h3 class = "text-center"> Add Item</h3>
-                                  <div class="form-group"> 
-                                      <input type="text" class = "form-control field" id="" placeholder="Product Name">
-              
-                                  </div>
-                                <input type="text" class="form-control field" id=""  placeholder="Car Model">
-                               </div>
-                              <div class="form-group">
-                                <input type="text" class="form-control field" id="" placeholder="Model Year">
-                              </div>
-                              <div class="form-group">
-                                <input type="int" class="form-control field" id="" placeholder="Price">
-                              </div>
-                              <div class="form-group">
-                                      <input type="int" class="form-control field" id="" placeholder="Quantity">
-                                    </div>
-                                    <div class="form-group dropdown">
-                                          <button class="btn btn-secondary dropdown-toggle field border-0 text-muted" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Categories
-                                          </button>
-                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                          </div>
-                                        </div>
-                              <div class="row easy">
-                                  <div class="d-flex justify-content-center">
-                                      <a class="btn btn-primary button text-light" href="registration.html" style="border-radius:100px">Add item</a>
-                                    </div>               
-                              </div>
-                            </form>
-                        </div>
-                        </div>
-                  </div>
+            <app-additem></app-additem>
                 <!-- LIST OF ITEMS -->
-                  <div class="d-flex h-100 justify-content-center align-items-center">
-                        <div class="bg-white p-5 easy secondbg">  
-                          <div class="row">
-                              <form>
-                                  <div class="form-group">
-                                      <h3 class = "text-center"> Inventory</h3>
-                                      <div class="form-group"> 
-                                          <input type="text" class = "form-control field" id="" placeholder="Product Name">
-                  
-                                      </div>
-                                    <input type="text" class="form-control field" id=""  placeholder="Car Model">
-                                   </div>
-                                  <div class="form-group">
-                                    <input type="text" class="form-control field" id="" placeholder="Model Year">
-                                  </div>
-                                  <div class="form-group">
-                                    <input type="int" class="form-control field" id="" placeholder="Price">
-                                  </div>
-                                  <div class="form-group">
-                                          <input type="int" class="form-control field" id="" placeholder="Quantity">
-                                        </div>
-                                        <div class="form-group dropdown">
-                                              <button class="btn btn-secondary dropdown-toggle field border-0 text-muted" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Dropdown button
-                                              </button>
-                                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                              </div>
-                                            </div>
-                                  <div class="row easy">
-                                      <div class="d-flex justify-content-center">
-                                          <a class="btn btn-primary button text-light" href="registration.html" style="border-radius:100px">Add item</a>
-                                        </div>               
-                                  </div>
-                                </form>
-                            </div>
-                            </div>
-                      </div>
+            <app-itemtable></app-itemtable>
     </div>
     
       
