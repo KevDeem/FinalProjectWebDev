@@ -3,7 +3,6 @@
 .background{
     background-size: cover;
     height: 100vh;
-    background-image: url("../../assets/pictures/background-picture.jpg");
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
