@@ -19,6 +19,8 @@ import { ItemtableComponent } from './itemtable/itemtable.component';
 import { EdititemComponent } from './edititem/edititem.component';
 import { RouterModule } from '@angular/router';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,12 +50,7 @@ import { RouterModule } from '@angular/router';
       {
         path: 'login',
         component: LoginComponent
-      },
-      {
-        path:'inventory',
-        component:InventoryComponent
       }
-
     ]),
   ],
   providers: [],

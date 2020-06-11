@@ -1,5 +1,5 @@
 {
-    "/api":{
+    "/users":{
         "target":"http.www.google.com",
         "secure":false,
         "changeOrigin": true
