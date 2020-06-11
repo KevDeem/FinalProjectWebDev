@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
@@ -16,6 +17,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { AdditemComponent } from './additem/additem.component';
 import { ItemtableComponent } from './itemtable/itemtable.component';
 import { EdititemComponent } from './edititem/edititem.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -33,10 +35,26 @@ import { EdititemComponent } from './edititem/edititem.component';
     AdditemComponent,
     ItemtableComponent,
     EdititemComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot([
+      {
+        path:'',
+        component: AppComponent,
+      },
+      {
+        path: 'login',
+        component: LoginComponent
+      },
+      {
+        path:'inventory',
+        component:InventoryComponent
+      }
+
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
