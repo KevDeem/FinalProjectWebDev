@@ -18,6 +18,10 @@ import { AdditemComponent } from './additem/additem.component';
 import { ItemtableComponent } from './itemtable/itemtable.component';
 import { EdititemComponent } from './edititem/edititem.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthenticationService } from './authentication.service';
+import { AuthGuardService } from './auth-guard.service';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -42,18 +46,10 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([
-      {
-        path:'',
-        component: AppComponent,
-      },
-      {
-        path: 'login',
-        component: LoginComponent
-      }
-    ]),
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [AuthenticationService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

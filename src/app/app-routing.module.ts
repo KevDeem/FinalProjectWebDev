@@ -7,13 +7,14 @@ import { CartpageComponent } from './cartpage/cartpage.component';
 import { RegistrationpageComponent } from './registrationpage/registrationpage.component';
 import { LoginComponent } from './login/login.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { AuthGuardService } from './auth-guard.service';
 
 
 const routes: Routes = [
 {path : "mainpage", component : MainpageComponent},
 {path : "login", component : LoginComponent},
 {path : "navbar", component : NavbarComponent},
-{path : "inventory", component : InventoryComponent},
+{path : "inventory", component : InventoryComponent, canActivate: [AuthGuardService]},
 {path : "cartpage", component : CartpageComponent},
 {path : "registerpage", component : RegistrationpageComponent},
 {path : "checkout", component : CheckoutComponent},
