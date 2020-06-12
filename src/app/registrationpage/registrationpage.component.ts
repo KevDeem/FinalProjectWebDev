@@ -19,7 +19,7 @@ export class RegistrationpageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  register(){
+   register(){
     console.log(this.credentials)
     this.auth.register(this.credentials).subscribe(
       (res)=>{

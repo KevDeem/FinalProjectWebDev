@@ -22,8 +22,8 @@ export interface TokenPayload{
 }
 
 export interface TokenPayloadlogin{
-  username: string
   email: string
+  password: string
 }
 
 @Injectable({
