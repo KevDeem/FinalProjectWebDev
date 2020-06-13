@@ -1,37 +1,36 @@
 <div class="d-flex h-100 justify-content-center align-items-center">
     <div class="bg-white p-5 easy secondbg spacing col-lg-8 col-md-8 shadow mb-5">  
       <div class="row">
-          <form>
+          <form (ngSubmit)="insertData()">
               <div class="form-group">
                   <h3 class = "text-center"> Add Item</h3>
                   <div class="form-group"> 
-                      <input type="text" class = "form-control field" id="" placeholder="Product Name">
+                      <input type="text" class = "form-control field" id="" placeholder="Product Name" name = "name" [(ngModel)]="item.name">
 
                   </div>
-                <input type="text" class="form-control field" id=""  placeholder="Car Model">
+                <input type="text" class="form-control field" id=""  placeholder="Car Model" name="model" [(ngModel)]="item.model">
                </div>
               <div class="form-group">
-                <input type="text" class="form-control field" id="" placeholder="Model Year">
+                <input type="int" class="form-control field" id="" placeholder="Model Year" name="year" [(ngModel)]="item.year">
               </div>
               <div class="form-group">
-                <input type="int" class="form-control field" id="" placeholder="Price">
+                <input type="text" class = "form-control field" placeholder="Description" name="desc" [(ngModel)]="item.desc">
               </div>
               <div class="form-group">
-                      <input type="int" class="form-control field" id="" placeholder="Quantity">
+                <input type="int" class="form-control field" id="" placeholder="Price" name ="price" [(ngModel)]="item.price">
+              </div>
+              <div class="form-group">
+                      <input type="int" class="form-control field" id="" placeholder="Quantity" name="quantity" [(ngModel)]="item.quantity">
                     </div>
-                    <div class="form-group dropdown">
-                          <button class="btn btn-secondary dropdown-toggle field border-0 text-muted" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Categories
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
+                    <div class="form-group">
+                          <input type="text" class = "form-control field" placeholder="Category" name="category" [(ngModel)]="item.category">
                         </div>
+              <div class="form-group">
+                <input type="file" name="" id="">
+              </div>
               <div class="row easy">
                   <div class="d-flex justify-content-center">
-                      <a class="btn btn-primary button text-light" href="registration.html" style="border-radius:100px">Add item</a>
+                      <button class="btn btn-primary button text-light" style="border-radius:100px">Add item</button>
                     </div>               
               </div>
             </form>

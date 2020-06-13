@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { additem } from './additem.model';
+
 
 @Component({
   selector: 'app-additem',
@@ -6,10 +9,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./additem.component.css']
 })
 export class AdditemComponent implements OnInit {
+  item = new additem()
+  dataArr:any
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+  }
+
+  getItemData(){
+    console.log('hello')
+    this.dataService.getData().subscribe(res => {
+      this.dataArr=res
+    }) 
+  }
+
+  insertData(){
+    console.log('hi')
+    this.dataService.insertData(this.item).subscribe(res => {
+      this.getItemData()
+    })
   }
 
 }

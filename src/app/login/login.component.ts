@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService, TokenPayloadlogin } from '../authentication.service';
 import { Router} from '@angular/router'
+import { AdminNavbarComponent } from '../admin-navbar/admin-navbar.component';
 
 @Component({
   selector: 'app-login',
@@ -24,7 +25,7 @@ export class LoginComponent implements OnInit {
   login() {
     this.auth.login(this.credentials).subscribe(
       () => {
-        if (this.credentials.email && this.credentials.password == "admin"){
+        if ((this.credentials.email == "admin@admin.com") && (this.credentials.password == "admin")) {
           this.router.navigateByUrl('/inventory')
         }else{
           this.router.navigateByUrl('/mainpage')

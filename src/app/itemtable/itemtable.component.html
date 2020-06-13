@@ -1,6 +1,13 @@
 <div class="d-flex h-100 justify-content-center align-items-center">
     <div class="bg-white secondbg p-5 col-md-10 col-lg-10 shadow mb-5">  
     <h3 class = "text-center"> Inventory</h3>
+    <form>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 field" type="search" placeholder="Search" aria-label="Search">
+            <button class="button btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+    </form>
+    <br>
       <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">
                  <div class="table">
                   <table class="table bg-white tables">
@@ -18,18 +25,18 @@
                       </thead>
                       <tbody>
                           
-                              <tr>
-                                    <th scope="row">1</th>
-                                      <td>Coilovers</td>
-                                      <td>Focus RS</td>
-                                      <td>2020</td>
-                                      <td>This is a coilover that is intended for the 2020 focus RS bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</td>
-                                      <td>10</td>
-                                      <td>4999</td>
+                              <tr *ngFor="let obj of dataArr">
+                                    <th scope="row">{{obj.id}}</th>
+                                      <td>{{obj.name}}</td>
+                                      <td>{{obj.model}}</td>
+                                      <td>{{obj.year}}</td>
+                                      <td>{{obj.desc}}</td>
+                                      <td>{{obj.quantity}}</td>
+                                      <td>{{obj.price}}</td>
                                       <td>02-04-2020</td>
                                       <td>04-04-2020</td>
                                       <td>
-                                            <button type="submit" class="btn btn-primary button text-light">
+                                            <button type="submit" class="btn btn-primary button text-light" (click)="deleteData(obj.id)">
                                               Delete
                                             </button>
                                             <button class = "btn button ml-2 text-light" data-toggle="modal" data-target="#editmodal">

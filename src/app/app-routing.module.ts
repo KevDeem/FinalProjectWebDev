@@ -14,7 +14,7 @@ const routes: Routes = [
 {path : "mainpage", component : MainpageComponent},
 {path : "login", component : LoginComponent},
 {path : "navbar", component : NavbarComponent},
-{path : "inventory", component : InventoryComponent, canActivate: [AuthGuardService]},
+{path : "inventory", component : InventoryComponent},
 {path : "cartpage", component : CartpageComponent},
 {path : "registerpage", component : RegistrationpageComponent},
 {path : "checkout", component : CheckoutComponent},
