@@ -20,5 +20,9 @@ export class DataService {
     return this.httpClient.delete('http://apiaddress'+id)
   }
 
+  updateData(data){
+    return this.httpClient.post('http://google.com',data)
+  }
+
 
 }

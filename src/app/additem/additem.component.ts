@@ -9,6 +9,13 @@ import { additem } from './additem.model';
   styleUrls: ['./additem.component.css']
 })
 export class AdditemComponent implements OnInit {
+  id:any
+  name:any
+  model:any
+  year:any
+  desc:any
+  quantity:any
+  price:any
   item = new additem()
   dataArr:any
 

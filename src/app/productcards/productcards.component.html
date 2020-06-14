@@ -2,125 +2,16 @@
 
 
   <div class="col-lg-3 col-md-4">
-    <div class="card cards">
-        <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/wallpaper.jpg" alt="KW coilover Focus RS">
+    <div class="card cards" *ngFor="let obj of dataArr">
+        <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/unnamed.jpg" alt="KW coilover Focus RS">
         <div class="card-body">
-          <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-          <h6>$4,499.00</h6>
-          <button class="button btn btn-primary" type="submit">Buy</button>
+          <h5 class="card-title">{{obj.bame}} for {{obj.year}} ({{obj.year}})</h5>
+          <h6>${{obj.price}}.00</h6>
+          <button class="button btn btn-primary" type="submit">add to cart</button>
         </div>
       </div>
   </div>
-  <div class="col-lg-3 col-md-4">
-      <div class="card cards">
-          <img class="card-img-top img-thumbnail image" src="assets/pictures/kwfocusrs.jpg" alt="KW coilover Focus RS">
-          <div class="card-body">
-            <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-            <h6>$4,499.00</h6>
-            <button class="button btn btn-primary" type="submit">Buy</button>
-          </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-4">
-        <div class="card cards">
-            <img class="card-img-top img-thumbnail image" src="assets/pictures/background-picture.jpg" alt="KW coilover Focus RS">
-            <div class="card-body">
-              <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-              <h6>$4,499.00</h6>
-              <button class="button btn btn-primary" type="submit">Buy</button>
-            </div>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-4">
-          <div class="card cards">
-              <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/kwfocusrs.jpg" alt="KW coilover Focus RS">
-              <div class="card-body">
-                <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-                <h6>$4,499.00</h6>
-                <button class="button btn btn-primary" type="submit">Buy</button>
-              </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4">
-            <div class="card cards">
-                <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/kwfocusrs.jpg" alt="KW coilover Focus RS">
-                <div class="card-body">
-                  <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-                  <h6>$4,499.00</h6>
-                  <button class="button btn btn-primary" type="submit">Buy</button>
-                </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-              <div class="card cards">
-                  <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/kwfocusrs.jpg" alt="KW coilover Focus RS">
-                  <div class="card-body">
-                    <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-                    <h6>$4,499.00</h6>
-                    <button class="button btn btn-primary" type="submit">Buy</button>
-                  </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <div class="card cards">
-                    <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/kwfocusrs.jpg" alt="KW coilover Focus RS">
-                    <div class="card-body">
-                      <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-                      <h6>$4,499.00</h6>
-                      <button class="button btn btn-primary" type="submit">Buy</button>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-lg-3 col-md-4">
-                  <div class="card cards">
-                      <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/kwfocusrs.jpg" alt="KW coilover Focus RS">
-                      <div class="card-body">
-                        <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-                        <h6>$4,499.00</h6>
-                        <button class="button btn btn-primary" type="submit">Buy</button>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="card cards">
-                        <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/kwfocusrs.jpg" alt="KW coilover Focus RS">
-                        <div class="card-body">
-                          <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-                          <h6>$4,499.00</h6>
-                          <button class="button btn btn-primary" type="submit">Buy</button>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4">
-                      <div class="card cards">
-                          <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/wallpaper.jpg" alt="KW coilover Focus RS">
-                          <div class="card-body">
-                            <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-                            <h6>$4,499.00</h6>
-                            <button class="button btn btn-primary" type="submit">Buy</button>
-                          </div>
-                        </div>
-                    </div>
- <div class="col-lg-3 col-md-4">
-     <div class="card cards">
-         <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/background-picture.jpg" alt="KW coilover Focus RS">
-         <div class="card-body">
-           <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-           <h6>$4,499.00</h6>
-           <button class="button btn btn-primary" type="submit">Buy</button>
-         </div>
-       </div>
-   </div>
- <div class="col-lg-3 col-md-4">
-     <div class="card cards">
-         <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/kwfocusrs.jpg" alt="KW coilover Focus RS">
-         <div class="card-body">
-           <h5 class="card-title">K&W DDC Coilover kit for Focus RS (2020)</h5>
-           <h6>$4,499.00</h6>
-           <button class="button btn btn-primary" type="submit">Buy</button>
-         </div>
-       </div>
-   </div>
+  
 
 
 
