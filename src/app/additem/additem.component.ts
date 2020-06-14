@@ -25,7 +25,7 @@ export class AdditemComponent implements OnInit {
   }
 
   getItemData(){
-    console.log('hello')
+    console.log('i am a failure')
     this.dataService.getData().subscribe(res => {
       this.dataArr=res
     }) 
