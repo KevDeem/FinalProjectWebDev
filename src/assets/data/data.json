@@ -11,7 +11,7 @@
         "imageURL": "assets/pictures/kwfocusrs.jpg"
     },
     {
-        "id": 1,
+        "id": 2,
         "name": "HKS SQV4",
         "model": "Subaru WRX STI",
         "year": 2005,
@@ -23,7 +23,7 @@
 
     },
     {
-        "id": 1,
+        "id": 3,
         "name": "Greddy Sports Exhaust",
         "model": "Toyota GT86",
         "year": 2012,
@@ -35,7 +35,7 @@
 
     },
     {
-        "id": 1,
+        "id": 4,
         "name": "AEM infinity Programmable Engine Management System",
         "model": "Lamborghini Huracan",
         "year": 2017,
@@ -47,7 +47,7 @@
 
     },
     {
-        "id": 1,
+        "id": 5,
         "name": "Brembo Gran Turismo 6 Piston Front Brake Kit Red Slotted Rotors",
         "model": "Nissan 370z",
         "year": 2011,
@@ -59,7 +59,7 @@
 
     },
     {
-        "id": 1,
+        "id": 5,
         "name": "Garrett GT3076R",
         "model": "Pontiac Fiero",
         "year": 2002,
@@ -71,7 +71,7 @@
 
     },
     {
-        "id": 1,
+        "id": 6,
         "name": "BBS FI-R Forged",
         "model": "Porsche 991.2 911 GT3RS",
         "year": 2016,

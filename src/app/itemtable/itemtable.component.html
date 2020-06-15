@@ -32,7 +32,7 @@
                                       <td>{{obj.quantity}}</td>
                                       <td>${{obj.price}}.00</td>
                                       <td>
-                                            <button type="submit" class="btn btn-primary button text-light">
+                                            <button type="submit" class="btn btn-primary button text-light" (click)=deleteData(obj.id)>
                                               Delete
                                             </button>
                                             <button type="button" class="btn btn-primary button text-light ml-2" data-toggle="modal" data-target="#exampleModalCenter">
