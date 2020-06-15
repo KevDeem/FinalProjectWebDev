@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "K&W Coilover v3",
+        "model": "Ford Focus RS",
+        "year": 2020,
+        "description": "Amazing Product",
+        "quantity": 10,
+        "categories": "Suspension",
+        "price": 4999,
+        "imageURL": "assets/pictures/kwfocusrs.jpg"
+    },
+    {
+        "id": 1,
+        "name": "HKS SQV4",
+        "model": "Subaru WRX STI",
+        "year": 2005,
+        "description": "Amazing Product",
+        "quantity": 5,
+        "categories": "Engine",
+        "price": 255,
+        "imageURL": "assets/pictures/hkssqv4.jpg"
+
+    },
+    {
+        "id": 1,
+        "name": "Greddy Sports Exhaust",
+        "model": "Toyota GT86",
+        "year": 2012,
+        "description": "Amazing Product",
+        "quantity": 6,
+        "categories": "Engine",
+        "price": 809,
+        "imageURL": "assets/pictures/greddyexhaust.jpg"
+
+    },
+    {
+        "id": 1,
+        "name": "AEM infinity Programmable Engine Management System",
+        "model": "Lamborghini Huracan",
+        "year": 2017,
+        "description": "Amazing Product",
+        "quantity": 5,
+        "categories": "Engine",
+        "price": 1499,
+        "imageURL": "assets/pictures/AEMinfinity.jpg"
+
+    },
+    {
+        "id": 1,
+        "name": "Brembo Gran Turismo 6 Piston Front Brake Kit Red Slotted Rotors",
+        "model": "Nissan 370z",
+        "year": 2011,
+        "description": "Amazing Product",
+        "quantity": 5,
+        "categories": "Brakes",
+        "price": 3835,
+        "imageURL": "assets/pictures/brembo.jpeg"
+
+    },
+    {
+        "id": 1,
+        "name": "Garrett GT3076R",
+        "model": "Pontiac Fiero",
+        "year": 2002,
+        "description": "Amazing Product",
+        "quantity": 5,
+        "categories": "Engine",
+        "price": 1106,
+        "imageURL": "assets/pictures/garrett.jpeg"
+
+    },
+    {
+        "id": 1,
+        "name": "BBS FI-R Forged",
+        "model": "Porsche 991.2 911 GT3RS",
+        "year": 2016,
+        "description": "Amazing Product",
+        "quantity": 5,
+        "categories": "Wheels",
+        "price": 4999,
+        "imageURL": "assets/pictures/BBS.jpg"
+
+    }
+
+]

@@ -1,11 +1,11 @@
 <div class="row col-lg-12 origin">
 
 
-  <div class="col-lg-3 col-md-4">
-    <div class="card cards" *ngFor="let obj of dataArr">
-        <img class="card-img-top img-thumbnail img-responsive image" src="assets/pictures/unnamed.jpg" alt="KW coilover Focus RS">
+  <div class="col-lg-3 col-md-4" *ngFor="let obj of dataArr">
+    <div class="card cards">
+        <img class="card-img-top img-thumbnail img-responsive image" src="{{obj.imageURL}}" alt="{{obj.name}} for {{obj.model}}">
         <div class="card-body">
-          <h5 class="card-title">{{obj.bame}} for {{obj.year}} ({{obj.year}})</h5>
+          <h5 class="card-title">{{obj.name}} for {{obj.model}} ({{obj.year}})</h5>
           <h6>${{obj.price}}.00</h6>
           <button class="button btn btn-primary" type="submit">add to cart</button>
         </div>

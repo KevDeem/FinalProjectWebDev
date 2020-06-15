@@ -22,7 +22,7 @@ export interface TokenPayload{
 }
 
 export interface TokenPayloadlogin{
-  email: string
+  username: string
   password: string
 }
 
@@ -35,12 +35,12 @@ export class AuthenticationService {
   constructor(private http: HttpClient, private router: Router) { }
 
 
-  private saveToken (token: string): void{
+  public saveToken (token: string): void{
     localStorage.setItem('userToken', token)
     this.token = token
   }
 
-  private getToken (): string {
+  public getToken (): string {
     if (!this.token) {
       this.token = localStorage.getItem('userToken')
     }
@@ -64,7 +64,7 @@ export class AuthenticationService {
   }
 
   public register (user: TokenPayload): Observable<any> {
-    const base = this.http.post('/users/register', user)
+    const base = this.http.post('http://18.141.200.130/api/users', user)
 
     const request = base.pipe(
       map((data: TokenResponse) => {
@@ -78,7 +78,7 @@ export class AuthenticationService {
   }
 
   public login (user: TokenPayloadlogin): Observable<any> {
-    const base = this.http.post('/users/login', user)
+    const base = this.http.post('http://18.141.200.130/api/users', user)
 
     const request = base.pipe(
       map((data: TokenResponse) => {

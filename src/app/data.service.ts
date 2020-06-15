@@ -9,19 +9,19 @@ export class DataService {
   constructor(private httpClient: HttpClient) { }
 
   getData(){
-    return this.httpClient.get('http://apiaddress')
+    return this.httpClient.get('./assets/data/data.json')
   }
 
   insertData(data){
-    return this.httpClient.post('http://apiaddress',data)
+    return this.httpClient.post('http://http://18.141.200.130/api/items',data)
 
   }
   deleteData(id){
-    return this.httpClient.delete('http://apiaddress'+id)
+    return this.httpClient.delete('http://18.141.200.130/api/items'+id)
   }
 
   updateData(data){
-    return this.httpClient.post('http://google.com',data)
+    return this.httpClient.post('http://18.141.200.130/api/items',data)
   }
 
 

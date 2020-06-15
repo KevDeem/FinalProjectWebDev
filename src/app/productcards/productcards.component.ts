@@ -7,11 +7,18 @@ import { DataService } from '../data.service';
   styleUrls: ['./productcards.component.css']
 })
 export class ProductcardsComponent implements OnInit {
-  dataArr:any
+  dataArr:any = []
+  
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.dataService.getData().subscribe(data => {
+      this.dataArr= data
+    }) 
+  
   }
+
+
   getItemData(){
     console.log('hello')
     this.dataService.getData().subscribe(res => {

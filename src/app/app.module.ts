@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthenticationService } from './authentication.service';
 import { AuthGuardService } from './auth-guard.service';
 import { FormsModule } from '@angular/forms';
+import { httpInterceptProviders } from './index';
 
 
 
@@ -49,7 +50,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [AuthenticationService, AuthGuardService],
+  providers: [AuthenticationService, AuthGuardService, httpInterceptProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

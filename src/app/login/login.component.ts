@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService, TokenPayloadlogin } from '../authentication.service';
 import { Router} from '@angular/router'
-import { AdminNavbarComponent } from '../admin-navbar/admin-navbar.component';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +9,7 @@ import { AdminNavbarComponent } from '../admin-navbar/admin-navbar.component';
 })
 export class LoginComponent implements OnInit {
   credentials: TokenPayloadlogin = {
-    email: '',
+    username: '',
     password: ''
 
   }
@@ -24,8 +23,10 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.auth.login(this.credentials).subscribe(
-      () => {
-        if ((this.credentials.email == "admin@admin.com") && (this.credentials.password == "admin")) {
+      (res) => {
+        this.auth.saveToken(res.access_token)
+        this.auth.getToken()
+        if ((this.credentials.username == "admin@admin.com") && (this.credentials.password == "admin")) {
           this.router.navigateByUrl('/inventory')
         }else{
           this.router.navigateByUrl('/mainpage')

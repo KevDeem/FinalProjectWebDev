@@ -19,22 +19,18 @@
                             <th scope="col">Description</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">Price</th>
-                            <th scope="col">Date Added</th>
-                            <th scope="col">Date Updated</th>
                             <th class="th-md" scope="col">Actions</th>
                       </thead>
                       <tbody>
                           
                               <tr *ngFor="let obj of dataArr">
-                                    <th scope="row">1 {{obj.name}}</th>
-                                      <td>1</td>
-                                      <td>1</td>
-                                      <td>1</td>
-                                      <td>1</td>
-                                      <td>1</td>
-                                      <td>1</td>
-                                      <td>02-04-2020</td>
-                                      <td>04-04-2020</td>
+                                      <th scope="row">{{obj.id}}</th>
+                                      <td>{{obj.name}}</td>
+                                      <td>{{obj.model}}</td>
+                                      <td>{{obj.year}}</td>
+                                      <td>{{obj.description}}</td>
+                                      <td>{{obj.quantity}}</td>
+                                      <td>${{obj.price}}.00</td>
                                       <td>
                                             <button type="submit" class="btn btn-primary button text-light">
                                               Delete
@@ -60,17 +56,42 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">Edit Item</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <form>
+            <div class="form-group">
+                <div class="form-group"> 
+                    <input type="text" class = "form-control field" id="" placeholder="Product Name" name = "name">
+                </div>
+              <input type="text" class="form-control field" id=""  placeholder="Car Model" name="model">
+             </div>
+            <div class="form-group">
+              <input type="int" class="form-control field" id="" placeholder="Model Year" name="year">
+            </div>
+            <div class="form-group">
+              <input type="text" class = "form-control field" placeholder="Description" name="desc">
+            </div>
+            <div class="form-group">
+              <input type="int" class="form-control field" id="" placeholder="Price" name ="price">
+            </div>
+            <div class="form-group">
+                    <input type="int" class="form-control field" id="" placeholder="Quantity" name="quantity">
+                  </div>
+            <div class="form-group">
+                        <input type="text" class = "form-control field" placeholder="Category" name="category">
+                      </div>
+            <div class="form-group">
+              <input type="file" name="" id="">
+            </div>
+          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary button">Save changes</button>
         </div>
       </div>
     </div>
